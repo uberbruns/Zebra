@@ -24,7 +24,7 @@ extension AppManager {
     }
 
     
-    public func performSegue(withIdentifier identifier: String, from sourceViewController: UIViewController, data: AssemblationData = [:]) {
+    public func performSegue(to identifier: String, from sourceViewController: UIViewController, data: AssemblationData = [:]) {
         if let viewController = try? viewController(forIdentifier: identifier, data: data) {
             show(viewController: viewController, from: sourceViewController, identifier: identifier)
             

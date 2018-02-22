@@ -33,9 +33,9 @@ public class Agent {
     
     // MARK: - View Controller -
     
-    public func performSegue(withIdentifier identifier: String, data: AssemblationData = [:]) {
+    public func performSegue(to identifier: String, data: AssemblationData = [:]) {
         guard let viewController = viewController else { return }
-        appManager.performSegue(withIdentifier: identifier, from: viewController, data: data)
+        appManager.performSegue(to: identifier, from: viewController, data: data)
     }
 
     
