@@ -6,7 +6,7 @@ An experimental Swift library trying to make it easy to write simple cleanly str
 
 ### The Setup
 
-This is how you setup your application using Zebra. You start by registering instances of your core services with your subclass of `AppManager`. In this case the `MainAppManager`.
+This is how you setup your application using Zebra. You start by registering instances of your core services with your subclass of `AppManager`. In this case the `MainAppManager`. Later services can be resolved by using their type or a passing a protocol.
 In the second step you register your view controllers classes an assign them an identifier. This means that later on your view controller do not need to know each other.
 
 ```swift
