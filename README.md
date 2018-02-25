@@ -1,5 +1,5 @@
 # Zebra
-An experimental Swift library trying to make it easy to write simple cleanly structured iOS app. Because the goal is a simple pattern the lib is called Zebra 🦓.
+An experimental Swift library trying to make it easy to write simple cleanly structured iOS apps. Because the goal is a simple pattern the lib is called Zebra 🦓.
 
 
 ## Usage
@@ -11,11 +11,10 @@ In the second step you register your view controllers classes an assign them an 
 
 ```swift
 var window: UIWindow?
-var manager: AppManager!
+var manager = MainAppManager()
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Setup dependencies
-    let manager = MainAppManager()
     do {
         // Register services
         let database = try MainDatabase()
